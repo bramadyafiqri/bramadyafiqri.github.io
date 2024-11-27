@@ -14,11 +14,6 @@ h1, h2, h3 {
 #home {
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
 }
 
 .profile-picture {
@@ -33,13 +28,11 @@ h1, h2, h3 {
 
 #dynamicText {
     display: inline-block;
-    max-width: 100%;
-    text-align: center;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal; /* Allow text to break into multiple lines */
-    text-overflow: ellipsis;
-    font-size: 5vw; /* Default size for small screens */
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1rem, 6vw, 3rem); /* Ukuran font responsif */
 }
 
 .edu-font {
@@ -170,14 +163,6 @@ footer p {
     font-size: 0.875rem;
 }
 
-@media (max-width: 768px) {
-    #dynamicText {
-        font-size: 5vw; /* Smaller size for mobile */
-    }
-}
-
-@media (min-width: 1024px) {
-    #dynamicText {
-        font-size: 3rem; /* Reasonable font size for desktop */
-    }
+.text-justify {
+    text-align: justify;
 }
