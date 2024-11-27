@@ -14,6 +14,11 @@ h1, h2, h3 {
 #home {
     background-size: cover;
     background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .profile-picture {
@@ -28,10 +33,12 @@ h1, h2, h3 {
 
 #dynamicText {
     display: inline-block;
+    max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    padding-right: 10px;
-    font-family: 'Poppins', sans-serif;
+    text-overflow: ellipsis;
+    font-size: 4vw;
+    text-align: center;
 }
 
 .edu-font {
@@ -161,6 +168,9 @@ footer p {
     margin: 0;
     font-size: 0.875rem;
 }
-.text-justify {
-    text-align: justify;
+
+@media (max-width: 768px) {
+    #dynamicText {
+        font-size: 6vw;
+    }
 }
