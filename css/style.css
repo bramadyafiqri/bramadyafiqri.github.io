@@ -34,11 +34,12 @@ h1, h2, h3 {
 #dynamicText {
     display: inline-block;
     max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     font-size: 4vw;
     text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal; /* Allow text to break into multiple lines */
+    text-overflow: ellipsis;
 }
 
 .edu-font {
