@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@700&family=Lacquer&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        const path = window.location.pathname;
+        if (path === '/home') {
+            window.location.replace('/index.html');
+        } else if (path === '/about') {
+            window.location.replace('/about.html');
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-white font-poppins">
+    <div class="min-h-screen flex flex-col items-center justify-center text-center px-6">
+        <h1 class="text-6xl lacquer-regular mb-4">404</h1>
+        <h2 class="text-3xl lacquer-regular mb-6">Oops! Halaman Tidak Ditemukan</h2>
+        <p class="text-lg mb-8">
+            Maaf, halaman yang Anda cari tidak tersedia. Anda dapat kembali ke <a href="index.html" class="text-blue-500 hover:underline">Beranda</a> atau coba lagi.
+        </p>
+        <div class="profile-picture"></div>
+        <p class="text-sm mt-6 text-gray-400">© <script>document.write(new Date().getFullYear())</script> FiqDev. All rights reserved.</p>
+    </div>
+</body>
+</html>
