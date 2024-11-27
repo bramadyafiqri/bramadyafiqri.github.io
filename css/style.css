@@ -39,7 +39,7 @@ h1, h2, h3 {
     overflow-wrap: break-word;
     white-space: normal; /* Allow text to break into multiple lines */
     text-overflow: ellipsis;
-    font-size: 6vw; /* Default size for small screens */
+    font-size: 5vw; /* Default size for small screens */
 }
 
 .edu-font {
@@ -172,12 +172,12 @@ footer p {
 
 @media (max-width: 768px) {
     #dynamicText {
-        font-size: 3vw; /* Adjust text size for smaller screens */
+        font-size: 5vw; /* Smaller size for mobile */
     }
 }
 
 @media (min-width: 1024px) {
     #dynamicText {
-        font-size: 3vw; /* Set a more reasonable size for larger screens */
+        font-size: 2rem; /* Reasonable font size for desktop */
     }
 }
