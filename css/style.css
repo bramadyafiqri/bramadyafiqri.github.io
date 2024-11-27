@@ -172,7 +172,7 @@ footer p {
 
 @media (max-width: 768px) {
     #dynamicText {
-        font-size: 5vw; /* Smaller size for mobile */
+        font-size: 7vw; /* Smaller size for mobile */
     }
 }
 
