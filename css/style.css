@@ -178,6 +178,6 @@ footer p {
 
 @media (min-width: 1024px) {
     #dynamicText {
-        font-size: 4rem; /* Reasonable font size for desktop */
+        font-size: 3rem; /* Reasonable font size for desktop */
     }
 }
