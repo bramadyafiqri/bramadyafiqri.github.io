@@ -28,11 +28,14 @@ h1, h2, h3 {
 
 #dynamicText {
     display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
     padding-right: 10px;
     font-family: 'Poppins', sans-serif;
 }
+
 
 .edu-font {
     font-family: 'Edu AU VIC WA NT Arrows', cursive;
