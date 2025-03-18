@@ -1,8 +1,11 @@
+const currentYear = new Date().getFullYear();
+const experienceYears = currentYear - 2021;
+
 const texts = [
-    "3 Tahun Pengalaman!!",
+    `${experienceYears} Tahun Pengalaman!!`,
     "Saya seorang Developer Teknologi dan Penggemar Pembelajaran Mesin",
     "Saya mengkhususkan diri dalam Pengembangan Web, AI, dan Pengembangan Game",
-    "3 Years experience!!",
+    `${experienceYears} Years experience!!`,
     "I'm a Tech Developer and Machine Learning Enthusiast",
     "I specialize in Web Development, AI, and Game Development"
 ];
